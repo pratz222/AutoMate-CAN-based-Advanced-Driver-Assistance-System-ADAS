@@ -24,3 +24,6 @@ The magic happens as the data is transmitted via CAN High and CAN Low twisted pa
 
 But that’s not all! An OLED display serves as the main dashboard, providing a real-time overview of which actuators are active and displaying sensor readings for an intuitive user experience.
 This project is a step towards safer roads and smarter vehicles. Stay tuned for more updates on this exciting journey into the world of autonomous driving!
+
+![image](https://github.com/pratz222/AutoMate-CAN-based-Advanced-Driver-Assistance-System-ADAS/assets/53640877/75558c65-f6fc-4b90-a875-9705941fbe85)
+
