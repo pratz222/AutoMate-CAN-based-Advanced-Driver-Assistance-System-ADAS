@@ -1,29 +1,43 @@
-# CAN-based Advanced Driver Assistance System (ADAS)
-I’m excited to share my latest project, a CAN-based Advanced Driver Assistance System (ADAS), designed to enhance vehicle safety and performance. This innovative hardware solution integrates two microcontrollers and two MCP2515 CAN modules, each equipped with onboard CAN Controller and CAN Transceiver capabilities set at 500kbps. 
+# CAN-Based Advanced Driver Assistance System (ADAS)
 
-As of now, the project has only two CAN Nodes. The next part will have more number of CAN Nodes communicating simultaneously over the CAN Bus.
+## Project Overview
+The CAN-based Advanced Driver Assistance System (ADAS) is an innovative hardware solution designed to enhance vehicle safety and performance. By integrating multiple sensors and actuators with a Controller Area Network (CAN) bus, this project facilitates real-time communication between components, leading to a more intelligent driving experience. Currently, the system operates with two CAN nodes, with plans for expansion to accommodate more nodes in the future.
 
-🛠 𝐇𝐚𝐫𝐝𝐰𝐚𝐫𝐞 𝐇𝐢𝐠𝐡𝐥𝐢𝐠𝐡𝐭𝐬 :
-Sensors Galore: LDR, Temperature Sensor, Ultrasonic Sensor, and Raindrop Sensor.
+## Motivation Behind the Project
+This project arose from the need for improved vehicle safety and automation. By utilizing advanced sensors and actuators, I aimed to create a system that can react to environmental conditions and enhance the driver's experience, contributing to safer roads and smarter vehicles.
 
-Actuator Heaven: DC Fan, Servo Motor, LED Headlights, and an OLED Display for real-time feedback.
+## Key Features
+- **CAN Communication:** Utilizes MCP2515 CAN modules for efficient data transmission at 500kbps between multiple microcontrollers.
+- **Sensor Integration:** Incorporates various sensors, including LDR (Light Dependent Resistor), temperature sensor, ultrasonic sensor, and raindrop sensor, to monitor environmental conditions.
+- **Actuator Control:** Activates several actuators based on sensor inputs, including:
+  - **DC Fan:** Engages when temperature thresholds are exceeded.
+  - **Servo Motor:** Operates windshield wipers automatically upon detecting rain.
+  - **LED Headlights:** Illuminates in response to low light conditions.
+  - **OLED Display:** Provides real-time feedback on sensor readings and actuator statuses.
 
-🔧 𝐇𝐨𝐰 𝐢𝐭 𝐖𝐨𝐫𝐤𝐬 :
-Data Collection: Sensors gather critical environmental data.
-CAN Communication: Unique CAN IDs frame the data and transmit it via CAN High and CAN Low twisted pair wires.
+## How It Works
+1. **Data Collection:** Sensors gather critical environmental data continuously.
+2. **CAN Communication:** The data is framed with unique CAN IDs and transmitted through CAN High and CAN Low twisted pair wires.
+3. **Actuator Activation:** At the receiving end, the microcontroller interprets the data and activates the appropriate actuators:
+   - The **DC fan** turns on to maintain a comfortable cabin temperature.
+   - The **servo motor** drives the wipers automatically when rain is detected.
+   - The **LED headlights** activate as darkness falls.
+   - The **OLED display** presents real-time sensor readings and actuator status.
 
-𝐀𝐜𝐭𝐢𝐨𝐧 𝐓𝐢𝐦𝐞 : 
-On the receiving end, the microcontroller activates the appropriate actuators:
+## Hardware Highlights
+- **Microcontrollers:** Two microcontrollers serve as the central units for processing sensor data and controlling actuators.
+- **MCP2515 CAN Modules:** Each module comes equipped with a CAN controller and transceiver for reliable communication.
+- **Sensors:** LDR, temperature sensor, ultrasonic sensor, and raindrop sensor for comprehensive environmental monitoring.
+- **Actuators:** DC fan, servo motor, LED headlights, and OLED display for interactive feedback.
 
-🌡 DC Fan kicks in when the temperature rises.
-☔️ Servo Motor drives the wipers automatically on detecting rain.
-💡 LED headlights illuminate as soon as darkness falls.
-📊 OLED Display shows real-time sensor readings and actuator status, bringing the dashboard to life!
+## Future Plans
+This project is just the beginning. Future enhancements will include additional CAN nodes for simultaneous communication, expanding the system's capabilities and further improving vehicle automation.
 
-The magic happens as the data is transmitted via CAN High and CAN Low twisted pair wires to a second CAN module. Here, a microcontroller interprets the sensor readings and activates multiple actuators accordingly. Imagine a DC fan that kicks in to cool down the cabin when temperatures soar, a servo motor that mimics automatic wiper action during rainfall, and an LED that illuminates the headlights in response to darkness detected by the LDR.
+## Contribution
+I welcome contributions to the CAN-based ADAS project! Feel free to share your ideas, report issues, or propose enhancements to improve the system's functionality.
 
-But that’s not all! An OLED display serves as the main dashboard, providing a real-time overview of which actuators are active and displaying sensor readings for an intuitive user experience.
-This project is a step towards safer roads and smarter vehicles. Stay tuned for more updates on this exciting journey into the world of autonomous driving!
+## Conclusion
+This project represents a significant step toward the future of autonomous driving, combining advanced sensing and actuator technologies within a CAN framework. Stay tuned for further developments and updates as this project evolves into a more sophisticated driver assistance system!
 
 ![image](https://github.com/pratz222/AutoMate-CAN-based-Advanced-Driver-Assistance-System-ADAS/assets/53640877/75558c65-f6fc-4b90-a875-9705941fbe85)
 
